@@ -10,5 +10,5 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ExampleMod.MODID);
 
     public static final RegistryObject<Item> BANDAGE =
-            ITEMS.register("bandage", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            ITEMS.register("bandage", () -> new BandageItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 }
