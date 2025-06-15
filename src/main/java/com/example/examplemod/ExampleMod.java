@@ -29,6 +29,7 @@ public class ExampleMod
     public ExampleMod()
     {
         ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        MinecraftForge.EVENT_BUS.register(new DamageHandler());
 
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
